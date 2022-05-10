@@ -50,7 +50,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifacts: '**/*.war', fingerprint: true
+            archiveArtifacts artifacts: 'new-project-jenkins-docker/target/*.war', fingerprint: true
         }
     }
 }
